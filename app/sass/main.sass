@@ -23,14 +23,81 @@ ul,li
 
 a
 	text-decoration: none
+	color: $white
 	&:hover
 		text-decoration: none
+		color: $accent
 
 .img-responsive
 	max-width: 100%
 	height: auto
 	display: block
 
+h4,h6
+	color: #333333
+	font-family: $accent-font
+	font-size: 30px
+	font-weight: 700
+	text-transform: uppercase
+h5
+	color: #333333
+	font-family: $manuscript
+	font-size: 24px
+	font-weight: 400
+h6
+	font-size: 14px
+	font-weight: 400
+p
+	color: #999999
+	font-family: $default-font
+	font-size: 15px
+	font-weight: 400
+	line-height: 24px
 
 
+
+
+
+
+
+
+
+.header
+	height: 100vh
+	background-repeat: no-repeat
+	background-size: cover
+	.navigation
+		padding-top: 20px
+		&__logo
+			h2
+				font-family: $accent-font
+				font-size: 30px
+				font-weight: 700
+		&__menu
+			ul
+				margin: auto
+				justify-content: space-around
+				display: flex
+				flex-direction: row
+				margin-top: 20px
+				a
+					font-family: $accent-font
+					font-size: 14px
+					text-transform: uppercase
+					&.active
+						color: $accent
+						padding-bottom: 5px
+						border-bottom: 2px solid $accent
+		&__functions
+			ul
+				align-self: center
+				margin: auto
+				justify-content: flex-end
+				display: flex
+				margin-top: 20px
+				li:not(:last-child)
+					margin-right: 20px
+
+
+	
 @import "media" // Always at the end
