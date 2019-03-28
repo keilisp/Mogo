@@ -11,7 +11,8 @@ var gulp          = require('gulp'),
 		rename        = require('gulp-rename'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
-		rsync         = require('gulp-rsync');
+		rsync         = require('gulp-rsync'),
+		open 					= require('gulp-open');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -67,13 +68,22 @@ gulp.task('rsync', function() {
 	}))
 });
 
+gulp.task('browser', function(){
+  var options = {
+    uri: 'http://localhost:3000',
+    app: 'chrome'
+  };
+  gulp.src(__filename)
+  .pipe(open(options));
+});
+
 if (gulpversion == 3) {
 	gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
 		gulp.watch('app/*.html', ['code'])
 	});
-	gulp.task('default', ['watch']);
+	gulp.task('default', ['watch', 'browser']);
 }
 
 if (gulpversion == 4) {
@@ -82,5 +92,5 @@ if (gulpversion == 4) {
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 		gulp.watch('app/*.html', gulp.parallel('code'))
 	});
-	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
+	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch', 'browser'));
 }
