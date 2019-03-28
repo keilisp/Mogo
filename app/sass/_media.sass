@@ -8,12 +8,49 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .header
+    .offer
+      h2
+        font-size: 45px
+      h1
+        font-size: 120px
+      
+
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .header
+    .navigation
+      &__functions
+        padding-top: 10px
+        ul
+          justify-content: space-around
+    .offer
+      h2
+        font-size: 45px
+      h1
+        font-size: 90px
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .header
+    .offer
+      h2
+        font-size: 35px
+      h1
+        font-size: 55px
+        line-height: 50px
+    .navigation
+      &__functions
+        padding-top: 10px
+        ul
+          justify-content: space-around
+
+    .navigation__menu
+      display: none
+  .slicknav_menu
+    display: inline-block
+
 
 
 /*==========  Mobile First  ==========*/
