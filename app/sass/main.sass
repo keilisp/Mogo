@@ -37,7 +37,7 @@ h4,h6
 	color: #333333
 	font-family: $accent-font
 	font-size: 30px
-	font-weight: 700
+	font-weight: bold
 	text-transform: uppercase
 h5
 	color: #333333
@@ -53,6 +53,10 @@ p
 	font-size: 15px
 	font-weight: 400
 	line-height: 24px
+hr
+	height: 3px
+	background-color: #f38181
+	width: 60px
 
 
 
@@ -104,7 +108,7 @@ p
 		h1
 			font-family: $accent-font
 			font-size: 9.375em
-			font-weight: 700
+			font-weight: bold
 			line-height: 140px
 			text-transform: uppercase
 		hr
@@ -140,8 +144,95 @@ p
 					margin-right: 5%
 
 
+.about-us
+	text-align: center
+	padding-top: 5%
+	padding-bottom: 5%
+	&__story
+		h5
+			margin-bottom: 20px
+		h4
+			margin-bottom: 35px
+		hr
+			margin-bottom: 35px
+	&__photos
+		margin-top: 4%
+		img
+			margin: 0 auto
+
+.numbers
+	background-color: $main
+	text-align: center
+	overflow-x: hidden
+	.col-md-2
+		border-right: 1px solid #b5eae0
+		&:first-child
+			border-left: 1px solid #b5eae0
+	&__wrapper
+		padding-top: 25%
+		padding-bottom: 25%
+		h3
+			font-family: $accent-font
+			font-size: 72px
+			font-weight: 700
+			text-transform: uppercase
+		span
+			font-family: $accent-font
+			font-size: 14px
+			text-transform: uppercase
+
+.services
+	padding-top: 5%
+	padding-bottom: 4%
+	&__heading
+		margin-bottom: 4%
+		text-align: center
+		h5
+			margin-bottom: 20px
+		h4
+			margin-bottom: 35px
+		hr
+			margin-bottom: 35px
+	&__content
+		.col-lg-1
+			text-align: right
+		.col-lg-3
+			h6
+				font-weight: bold
+		hr
+			width: 100%
+			background-color: #e5e5e5
+			height: .3px
+			margin-top: 4%
+			margin-bottom: 4%
+
+.design
+	text-align: center
+	padding-top: 5%
+	&__heading
+		h5
+			margin-bottom: 20px
+		h4
+			margin-bottom: 35px
+		hr
+			margin-bottom: 35px
+	&__photo
+		&-wrapper
+			img
+				display: inline-block
+			.mobile	
+				position: absolute
+				bottom: -100px
+				right: 170px
+
+
+
+
+
+
 .slicknav_menu
 	margin: 0 auto
+	padding: 0
 	display: none
 	position: absolute
 	background: transparent
@@ -154,7 +245,7 @@ p
 	.slicknav_icon
 		font-size: 30px
 	ul
-		background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);		text-align: center
+		background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
 		text-align: center
 		width: 100%
 		margin: 0

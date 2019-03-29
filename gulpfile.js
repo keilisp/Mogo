@@ -40,6 +40,9 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slicknav/dist/jquery.slicknav.min.js',
+		'app/libs/sliphover/src/jquery.sliphover.min.js',
+		'app/libs/waypoints/lib/jquery.waypoints.min.js',
+		'app/libs/Counter-Up/jquery.countup.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
