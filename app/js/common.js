@@ -11,4 +11,6 @@ $(function () {
 	});
 
 	$('.counter').countUp();
+
+	$('.beefup').beefup();
 });

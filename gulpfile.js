@@ -40,9 +40,11 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slicknav/dist/jquery.slicknav.min.js',
-		'app/libs/sliphover/src/jquery.sliphover.min.js',
+		'app/libs/SlipHover/src/jquery.sliphover.min.js',
 		'app/libs/waypoints/lib/jquery.waypoints.min.js',
 		'app/libs/Counter-Up/jquery.countup.min.js',
+		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/beefup/dist/js/jquery.beefup.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -74,7 +76,7 @@ gulp.task('rsync', function() {
 gulp.task('browser', function(){
   var options = {
     uri: 'http://localhost:3000',
-    app: 'chrome'
+    app: 'google-chrome'
   };
   gulp.src(__filename)
   .pipe(open(options));
