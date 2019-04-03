@@ -13,4 +13,12 @@ $(function () {
 	$('.counter').countUp();
 
 	$('.beefup').beefup();
+
+	$(".owl-carousel").owlCarousel({
+		items: 1,
+		mouseDrag: false,
+		dots: false,
+		nav: true,
+		loop: true,
+	});
 });

@@ -239,6 +239,7 @@ hr
 			margin-bottom: 35px
 	&__content
 		margin-top: 4%
+		padding-bottom: 6%
 		&-accordion
 			article
 				h2
@@ -259,7 +260,55 @@ hr
 					font-style: italic
 				.beefup__body
 					overflow-y: scroll
-					height: 180px
+					height: 160px
+
+
+
+.quotes
+	background-color: #f8f8f8
+	.row
+		padding-top: 5%
+		padding-bottom: 5%
+	&__content
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+		.col-lg-2
+			display: flex
+			justify-content: center
+		&-logo
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 3px solid $main
+			width: 150px
+			height: 150px
+			i
+				color: $main
+				font-size: 55.12px
+		p
+			color: #999999
+			font-family: $default-font
+			font-style: italic
+			font-size: 24px
+			line-height: 36px
+			margin-bottom: 0
+		span
+			color: #333333
+			font-family: $manuscript
+			font-size: 24px
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,6 +342,30 @@ hr
 			&:hover
 				color: $accent	
 
+
+
+
+
+.owl-carousel
+	position: relative !important
+	.owl-nav
+		position: absolute
+		top: 33%
+		width: 100% !important
+		.owl-next, .owl-prev
+			position: absolute
+			background-color: red
+			span
+				color: #cccccc
+				font-size: 50px
+		.owl-next
+			right: 2%
+			z-index: 999
+		.owl-prev
+			left: 2%
+
+
+			
 
 
 
