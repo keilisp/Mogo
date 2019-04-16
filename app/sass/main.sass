@@ -46,7 +46,7 @@ h5
 	font-weight: 400
 h6
 	font-size: 14px
-	font-weight: 400
+	font-weight: 800
 p
 	color: #999999
 	font-family: $default-font
@@ -108,7 +108,7 @@ hr
 		h1
 			font-family: $accent-font
 			font-size: 9.375em
-			font-weight: bold
+			font-weight: 800
 			line-height: 140px
 			text-transform: uppercase
 		hr
@@ -395,6 +395,8 @@ hr
 		hr
 			margin-bottom: 35px
 	.gallery
+		margin-top: 4%
+		padding-bottom: 3%
 		display: grid
 		grid-template-columns: 1fr 1fr 1fr 1fr
   	grid-template-rows: 1fr 1fr
@@ -451,7 +453,6 @@ hr
 
 
 .quotes-2
-	background-color: #f8f8f8
 	.row
 		padding-top: 5%
 		padding-bottom: 5%
@@ -570,6 +571,7 @@ hr
 		span
 			color: $gray
 			font-style: italic
+			margin-right: 5%
 
 
 
@@ -577,20 +579,22 @@ hr
 	background-size: cover
 	background-repeat: no-repeat
 	text-align: center
+	overflow-x: hidden
 	.row
 		padding-top: 1%
 		padding-bottom: 1%
-		i
-			font-size: 35px
-			color: #f38181
-		a
-			h4
+		.col-lg-12
+			padding-right: 0
+			i
+				font-size: 35px
 				color: #f38181
-				transition: border-bottom .1s ease-in-out
-				display: inline
-				&:hover
-					border-bottom: 4px solid #f38181
-	
+			a
+				h4
+					color: #f38181
+					transition: border-bottom .1s ease-in-out
+					&:hover
+						border-bottom: 4px solid #f38181
+		
 
 
 
@@ -665,15 +669,16 @@ footer
 					background-color: $main
 					border: none
 					&:hover
-						background-color: #f38181
+						background-color: #f38181 !important
 		&__blogs
 			&-wrapper
 				display: flex
 				align-items: center
-				padding-top: 12.6%
+				padding-top: 10.3%
 				img
 				&-text
 					display: flex
+					flex-direction: column
 					flex-wrap: wrap
 					margin-left: 8%
 					h6
@@ -685,8 +690,28 @@ footer
 						color: #999999
 						font-size: 13px
 						font-style: italic
+		&__instagram
+			display: flex
+			flex-direction: column
+			align-items: center
+			#lightgallery
+				padding-top: 8%
 
-
+.rights
+	padding-top: 2%
+	padding-bottom: 1%
+	.container
+		.row
+			display: flex
+			justify-content: center
+			align-items: center
+			h6
+				color: #333333
+				font-size: 14px
+				text-transform: none
+				span
+					font-weight: 800
+					color: #f38181;
 
 
 

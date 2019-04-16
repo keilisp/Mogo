@@ -45,6 +45,8 @@ gulp.task('scripts', function() {
 		'app/libs/Counter-Up/jquery.countup.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'app/libs/beefup/dist/js/jquery.beefup.min.js',
+		'app/libs/lightgallery/dist/js/lightgallery.min.js',
+		'app/libs/jquery-mousewheel/jquery.mousewheel.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

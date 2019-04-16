@@ -21,4 +21,8 @@ $(function () {
 		nav: true,
 		loop: true,
 	});
+
+	$(document).ready(function () {
+		$("#lightgallery").lightGallery();
+	});
 });
