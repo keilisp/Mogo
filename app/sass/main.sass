@@ -4,791 +4,775 @@
 
 
 
-/*спецификация*/
+// Specification
 body
-	box-sizing: border-box
-	overflow-x: hidden
-	color: $white
-	font-family: $default-font
-	font-weight: 400
-	line-height: 1.6
-	font-size: 16px
-	padding: 0
-	margin: 0
+  box-sizing: border-box
+  overflow-x: hidden
+  color: $white
+  font-family: $default-font
+  font-weight: 400
+  line-height: 1.6
+  font-size: 16px
+  padding: 0
+  margin: 0
 
 ul,li
-	list-style: none
-	margin: 0
-	padding: 0
+  list-style: none
+  margin: 0
+  padding: 0
 
 a
-	text-decoration: none
-	color: $white
-	&:hover
-		text-decoration: none
-		color: $accent
+  text-decoration: none
+  color: $white
+  &:hover
+    text-decoration: none
+    color: $accent
 
 .img-responsive
-	max-width: 100%
-	height: auto
-	display: block
+  max-width: 100%
+  height: auto
+  display: block
 
 h4,h6
-	color: #333333
-	font-family: $accent-font
-	font-size: 30px
-	font-weight: bold
-	text-transform: uppercase
+  color: #333333
+  font-family: $accent-font
+  font-size: 30px
+  font-weight: bold
+  text-transform: uppercase
 h5
-	color: #333333
-	font-family: $manuscript
-	font-size: 24px
-	font-weight: 400
+  color: #333333
+  font-family: $manuscript
+  font-size: 24px
+  font-weight: 400
 h6
-	font-size: 14px
-	font-weight: 800
+  font-size: 14px
+  font-weight: 800
 p
-	color: #999999
-	font-family: $default-font
-	font-size: 15px
-	font-weight: 400
-	line-height: 24px
+  color: #999999
+  font-family: $default-font
+  font-size: 15px
+  font-weight: 400
+  line-height: 24px
 hr
-	height: 3px
-	background-color: #f38181
-	width: 60px
+  height: 3px
+  background-color: #f38181
+  width: 60px
 
 
 
 
 
 .header
-	background-repeat: no-repeat
-	background-size: cover
-	.navigation
-		padding-top: 20px
-		&__logo
-			h2
-				font-family: $accent-font
-				font-size: 30px
-				font-weight: 700
-		&__menu
-			ul
-				margin: auto
-				justify-content: space-around
-				display: flex
-				flex-direction: row
-				margin-top: 20px
-				a
-					font-family: $accent-font
-					font-size: 14px
-					text-transform: uppercase
-					transition: all .3s ease
-					&.active
-						color: $accent
-						padding-bottom: 5px
-						border-bottom: 2px solid $accent
-		&__functions
-			ul
-				align-self: center
-				margin: auto
-				justify-content: flex-end
-				display: flex
-				margin-top: 20px
-				li:not(:last-child)
-					margin-right: 20px
+  background-repeat: no-repeat
+  background-size: cover
+  .navigation
+    padding-top: 20px
+    &__logo
+        h2
+          font-family: $accent-font
+          font-size: 30px
+          font-weight: 700
+    &__menu
+        ul
+          margin: auto
+          justify-content: space-around
+          display: flex
+          flex-direction: row
+          margin-top: 20px
+          a
+            font-family: $accent-font
+            font-size: 14px
+            text-transform: uppercase
+            transition: all .3s ease
+            &.active
+              color: $accent
+              padding-bottom: 5px
+              border-bottom: 2px solid $accent
+    &__functions
+        ul
+          align-self: center
+          margin: auto
+          justify-content: flex-end
+          display: flex
+          margin-top: 20px
+          li:not(:last-child)
+            margin-right: 20px
 
 
-	.offer
-		text-align: center
-		margin-top: 15%
-		h2
-			font-family: $manuscript
-			font-size: 72px
-		h1
-			font-family: $accent-font
-			font-size: 9.375em
-			font-weight: 800
-			line-height: 140px
-			text-transform: uppercase
-		hr
-			height: 3px
-			background-color: $white
-			width: 70px
-			margin-top: 73px
-		&__button
-			margin-top: 50px
-			a
-				border: 3px solid $white
-				padding: 6px 35px
-				transition: all .3s ease
-				&:hover
-					color: #E18882
-					border-color: #E18882
-	
+  .offer
+    text-align: center
+    margin-top: 15%
+    h2
+      font-family: $manuscript
+      font-size: 72px
+      h1
+        font-family: $accent-font
+        font-size: 9.375em
+        font-weight: 800
+        line-height: 140px
+        text-transform: uppercase
+      hr
+        height: 3px
+        background-color: $white
+        width: 70px
+        margin-top: 73px
+      &__button
+        margin-top: 50px
+        a
+          border: 3px solid $white
+          padding: 6px 35px
+          transition: all .3s ease
+          &:hover
+            color: #E18882
+            border-color: #E18882
 
-	.content
-		margin-top: 16%
-		padding-bottom: 1%
-		&__item
-			border-top: 3px solid $white
-			p
-				padding-top: 20px
-				color: $white
-				font-family: $accent-font
-				text-transform: uppercase
-				font-size: 18px
-				span
-					font-size: 24px
-					font-weight: 600
-					margin-right: 5%
+
+  .content
+    margin-top: 16%
+    padding-bottom: 1%
+    &__item
+      border-top: 3px solid $white
+      p
+        padding-top: 20px
+        color: $white
+        font-family: $accent-font
+        text-transform: uppercase
+        font-size: 18px
+        span
+          font-size: 24px
+          font-weight: 600
+          margin-right: 5%
 
 
 .about-us
-	text-align: center
-	padding-top: 5%
-	padding-bottom: 5%
-	&__story
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__photos
-		margin-top: 4%
-		img
-			margin: 0 auto
+  text-align: center
+  padding-top: 5%
+  padding-bottom: 5%
+  &__story
+      h5
+        margin-bottom: 20px
+      h4
+        margin-bottom: 35px
+      hr
+        margin-bottom: 35px
+  &__photos
+    margin-top: 4%
+    img
+      margin: 0 auto
 
 .numbers
-	background-color: $main
-	text-align: center
-	overflow-x: hidden
-	.col-md-2
-		border-right: 1px solid #b5eae0
-		&:first-child
-			border-left: 1px solid #b5eae0
-	&__wrapper
-		padding-top: 25%
-		padding-bottom: 25%
-		h3
-			font-family: $accent-font
-			font-size: 72px
-			font-weight: 700
-			text-transform: uppercase
-		span
-			font-family: $accent-font
-			font-size: 14px
-			text-transform: uppercase
+  background-color: $main
+  text-align: center
+  overflow-x: hidden
+  .col-md-2
+    border-right: 1px solid #b5eae0
+    &:first-child
+    border-left: 1px solid #b5eae0
+  &__wrapper
+    padding-top: 25%
+    padding-bottom: 25%
+    h3
+      font-family: $accent-font
+      font-size: 72px
+      font-weight: 700
+      text-transform: uppercase
+    span
+      font-family: $accent-font
+      font-size: 14px
+      text-transform: uppercase
 
 .services
-	padding-top: 5%
-	padding-bottom: 4%
-	&__heading
-		margin-bottom: 4%
-		text-align: center
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__content
-		.col-lg-1
-			text-align: right
-		.col-lg-3
-			h6
-				font-weight: bold
-		hr
-			width: 100%
-			background-color: #e5e5e5
-			height: .3px
-			margin-top: 4%
-			margin-bottom: 4%
+  padding-top: 5%
+  padding-bottom: 4%
+  &__heading
+    margin-bottom: 4%
+    text-align: center
+    h5
+      margin-bottom: 20px
+    h4
+      margin-bottom: 35px
+    hr
+      margin-bottom: 35px
+  &__content
+      .col-lg-1
+        text-align: right
+      .col-lg-3
+          h6
+            font-weight: bold
+      hr
+        width: 100%
+        background-color: #e5e5e5
+        height: .3px
+        margin-top: 4%
+        margin-bottom: 4%
 
 .design
-	text-align: center
-	padding-top: 5%
-	&__heading
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__photo
-		&-wrapper
-			img
-				display: inline-block
-			.mobile	
-				position: absolute
-				bottom: -100px
-				right: 170px
+  text-align: center
+  padding-top: 5%
+  &__heading
+      h5
+        margin-bottom: 20px
+      h4
+        margin-bottom: 35px
+      hr
+        margin-bottom: 35px
+  &__photo
+      &-wrapper
+          img
+            display: inline-block
+          .mobile
+            position: absolute
+            bottom: -100px
+            right: 170px
 
 .service
-	text-align: center
-	padding-top: 5%
-	img
-		margin: 0 auto
-	&__heading
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__content
-		margin-top: 4%
-		padding-bottom: 6%
-		&-accordion
-			article
-				h2
-					display: flex
-					align-items: center
-					text-align-last: left
-					border-bottom: 1px solid #e5e5e5
-					i
-						color: $main
-					span
-						color: #333333
-						font-family: $accent-font
-						font-size: 14px;
-						text-transform: uppercase
-						margin-left: 4%
-				p
-					text-align: left
-					font-style: italic
-					margin: 0
-				.beefup__body
-					overflow-x: hidden
-					overflow-y: scroll
-					height: 160px
-					padding-bottom: 0
-					padding-top: 0
+  text-align: center
+  padding-top: 5%
+  img
+    margin: 0 auto
+  &__heading
+      h5
+        margin-bottom: 20px
+      h4
+        margin-bottom: 35px
+      hr
+        margin-bottom: 35px
+  &__content
+    margin-top: 4%
+    padding-bottom: 6%
+    &-accordion
+        article
+            h2
+              display: flex
+              align-items: center
+              text-align-last: left
+              border-bottom: 1px solid #e5e5e5
+              i
+                color: $main
+              span
+                color: #333333
+                font-family: $accent-font
+                font-size: 14px;
+                text-transform: uppercase
+                margin-left: 4%
+            p
+              text-align: left
+              font-style: italic
+              margin: 0
+            .beefup__body
+              overflow-x: hidden
+              overflow-y: scroll
+              height: 160px
+              padding-bottom: 0
+              padding-top: 0
 
 
 
 .quotes
-	background-color: #f8f8f8
-	.row
-		padding-top: 5%
-		padding-bottom: 5%
-	&__content
-		display: flex
-		align-items: center
-		justify-content: center
-		flex-wrap: wrap
-		.col-lg-2
-			display: flex
-			justify-content: center
-		&-logo
-			display: flex
-			justify-content: center
-			align-items: center
-			border: 3px solid $main
-			width: 150px
-			height: 150px
-			i
-				color: $main
-				font-size: 55.12px
-		p
-			color: #999999
-			font-family: $default-font
-			font-style: italic
-			font-size: 24px
-			line-height: 36px
-			margin-bottom: 0
-		span
-			color: #333333
-			font-family: $manuscript
-			font-size: 24px
+  background-color: #f8f8f8
+  .row
+    padding-top: 5%
+    padding-bottom: 5%
+  &__content
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    .col-lg-2
+      display: flex
+      justify-content: center
+    &-logo
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 3px solid $main
+      width: 150px
+      height: 150px
+      i
+        color: $main
+        font-size: 55.12px
+    p
+      color: #999999
+      font-family: $default-font
+      font-style: italic
+      font-size: 24px
+      line-height: 36px
+      margin-bottom: 0
+    span
+      color: #333333
+      font-family: $manuscript
+      font-size: 24px
 
 
 
 
 .team
-	text-align: center
-	padding-top: 5%
-	img
-		margin: 0 auto
-	&__heading
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__content
-		margin-top: 4%
-		padding-bottom: 6%
-		h6
-			padding-top: 5%
-			font-size: 14px
-			font-weight: 400
-			text-transform: uppercase
-		span
-			color: $gray
-			font-size: 15px
-			font-weight: 400
-			line-height: 24px
-		.img-wrapper
-			position: relative
-			&:hover
-				.overlay
-					opacity: 1
-			img
-				width: 100%
-			.overlay
-				display: flex
-				justify-content: center
-				align-items: center
-				position: absolute
-				top: 0
-				bottom: 0
-				left: 0
-				right: 0
-				height: 100%
-				width: 100%
-				opacity: 0
-				transition: .3s ease
-				background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181)
-				ul
-					display: flex
-					li
-						display: flex
-						width: 56px
-						height: 56px
-						background-color: $accent
-						justify-content: center
-						align-items: center
-						transition: background-color.25s ease
-						&:hover
-							background-color: #f38181
-							i
-								transition: color .30s ease
-								color: $white
-						a
-							i
-								color: #f38181
-								font-size: 30px
-								transition: color .25s ease
-								&:hover
-									color: $accent
+  text-align: center
+  padding-top: 5%
+  img
+    margin: 0 auto
+  &__heading
+      h5
+        margin-bottom: 20px
+      h4
+        margin-bottom: 35px
+      hr
+        margin-bottom: 35px
+  &__content
+    margin-top: 4%
+    padding-bottom: 6%
+    h6
+      padding-top: 5%
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
+    span
+      color: $gray
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+    .img-wrapper
+      position: relative
+      &:hover
+          .overlay
+            opacity: 1
+      img
+        width: 100%
+      .overlay
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        opacity: 0
+        transition: .3s ease
+        background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181)
+        ul
+          display: flex
+          li
+            display: flex
+            width: 56px
+            height: 56px
+            background-color: $accent
+            justify-content: center
+            align-items: center
+            transition: background-color.25s ease
+            &:hover
+              background-color: #f38181
+              i
+                transition: color .30s ease
+                color: $white
+            a
+                i
+                  color: #f38181
+                  font-size: 30px
+                  transition: color .25s ease
+                  &:hover
+                    color: $accent
 
 
 .brands
-	background-color: #f8f8f8
-	overflow-x: hidden
-	img
-		padding-top: 2%
-		padding-bottom: 2%
+  background-color: #f8f8f8
+  overflow-x: hidden
+  img
+    padding-top: 2%
+    padding-bottom: 2%
 
 
 .some-work
-	text-align: center
-	padding-top: 5%
-	&__heading
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	.gallery
-		margin-top: 4%
-		padding-bottom: 3%
-		display: grid
-		grid-template-columns: 1fr 1fr 1fr 1fr
-  	grid-template-rows: 1fr 1fr
-		grid-template-areas: "gallery-1 gallery-2 gallery-3 gallery-4" "gallery-5 gallery-6 gallery-3 gallery-7"
-		.gallery-1
-			grid-area: gallery-1
-		.gallery-2
-			grid-area: gallery-2
-		.gallery-3
-			grid-area: gallery-3
-		.gallery-4
-			grid-area: gallery-4
-		.gallery-5
-			grid-area: gallery-5
-		.gallery-6
-			grid-area: gallery-6
-		.gallery-7
-			grid-area: gallery-7
-	.img-wrapper
-		position: relative
-		&:hover
-			.overlay
-				opacity: 1
-			img
-				width: 100%
-		.overlay
-			display: flex
-			justify-content: center
-			align-items: center
-			position: absolute
-			top: 0
-			bottom: 0
-			left: 0
-			right: 0
-			height: 100%
-			width: 100%
-			opacity: 0
-			transition: .3s ease
-			background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181)
-			ul
-				li
-					i
-						font-size: 30px
-						padding-bottom: 6%
-					h6
-						color: $white
-						font-size: 14px
-						text-transform: uppercase
-					span
-						font-size: 15px
-						font-weight: 200
-						line-height: 24px
-			
+  text-align: center
+  padding-top: 5%
+  &__heading
+      h5
+        margin-bottom: 20px
+      h4
+        margin-bottom: 35px
+      hr
+        margin-bottom: 35px
+  .gallery
+    margin-top: 4%
+    padding-bottom: 3%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "gallery-1 gallery-2 gallery-3 gallery-4" "gallery-5 gallery-6 gallery-3 gallery-7"
+    .gallery-1
+      grid-area: gallery-1
+    .gallery-2
+      grid-area: gallery-2
+    .gallery-3
+      grid-area: gallery-3
+    .gallery-4
+      grid-area: gallery-4
+    .gallery-5
+      grid-area: gallery-5
+    .gallery-6
+      grid-area: gallery-6
+    .gallery-7
+      grid-area: gallery-7
+  .img-wrapper
+    position: relative
+    &:hover
+        .overlay
+          opacity: 1
+        img
+          width: 100%
+    .overlay
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      height: 100%
+      width: 100%
+      opacity: 0
+      transition: .3s ease
+      background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181)
+      ul
+          li
+              i
+                font-size: 30px
+                padding-bottom: 6%
+              h6
+                color: $white
+                font-size: 14px
+                text-transform: uppercase
+              span
+                font-size: 15px
+                font-weight: 200
+                line-height: 24px
+
 
 
 .quotes-2
-	.row
-		padding-top: 5%
-		padding-bottom: 5%
-	&__content
-		display: flex
-		align-items: center
-		justify-content: center
-		flex-wrap: wrap
-		.col-lg-2
-			display: flex
-			justify-content: center
-		&-logo
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 150px
-			height: 150px
-		p
-			color: #999999
-			font-family: $default-font
-			font-style: italic
-			font-size: 24px
-			line-height: 36px
-			margin-bottom: 0
-		span
-			color: #333333
-			font-family: $manuscript
-			font-size: 24px
+    .row
+      padding-top: 5%
+      padding-bottom: 5%
+    &__content
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      .col-lg-2
+        display: flex
+        justify-content: center
+      &-logo
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 150px
+        height: 150px
+      p
+        color: #999999
+        font-family: $default-font
+        font-style: italic
+        font-size: 24px
+        line-height: 36px
+        margin-bottom: 0
+      span
+        color: #333333
+        font-family: $manuscript
+        font-size: 24px
 
 
 
 .clients
-	background-repeat: no-repeat
-	background-size: cover
-	padding-top: 5%
-	img
-		margin: 0 auto
-	&__heading
-		text-align: center
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__content
-		margin-top: 4%
-		padding-bottom: 5%
-	&__content-2
-		padding-bottom: 10%
-	&__content, &__content-2
-		.col-lg-2
-			display: flex
-			justify-content: flex-end
-			align-items: flex-start
-		.col-lg-4
-			h6
-				color: #333333
-				font-size: 14px
-				text-transform: uppercase
-			span
-				color: #333333
-				font-size: 15px
-				line-height: 24px
-				font-style: italic
-			hr
-				width: 100%
-				height: .5px
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 5%
+  img
+    margin: 0 auto
+  &__heading
+    text-align: center
+    h5
+      margin-bottom: 20px
+    h4
+      margin-bottom: 35px
+    hr
+      margin-bottom: 35px
+  &__content
+    margin-top: 4%
+    padding-bottom: 5%
+  &__content-2
+    padding-bottom: 10%
+  &__content, &__content-2
+      .col-lg-2
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+      .col-lg-4
+          h6
+            color: #333333
+            font-size: 14px
+            text-transform: uppercase
+          span
+            color: #333333
+            font-size: 15px
+            line-height: 24px
+            font-style: italic
+          hr
+            width: 100%
+            height: .5px
 
 
 .blog
-	padding-top: 5%
-	&__heading
-		text-align: center
-		h5
-			margin-bottom: 20px
-		h4
-			margin-bottom: 35px
-		hr
-			margin-bottom: 35px
-	&__content
-		padding-bottom: 6%
-		&-wrapper
-			position: relative
-			margin-bottom: 6%
-			img
-			.data
-				display: flex
-				justify-content: center
-				align-items: center
-				position: absolute
-				background-color: $main
-				width: 60px
-				height: 70px
-				bottom: 10%
-				left: -5%
-				p
-					color: $white
-					font-size: 15px
-					font-family: $accent-font
-					font-size: 30px
-					font-weight: 700
-					text-transform: uppercase
-					margin: 0
-					span
-						font-size: 15px
-						color: $white
-		h6
-		p
-		hr
-			background-color: #e5e5e5
-			height: 1px
-			width: 100%
-		i
-			color: $main
-		span
-			color: $gray
-			font-style: italic
-			margin-right: 5%
+  padding-top: 5%
+  &__heading
+    text-align: center
+    h5
+      margin-bottom: 20px
+    h4
+      margin-bottom: 35px
+    hr
+      margin-bottom: 35px
+  &__content
+    padding-bottom: 6%
+    &-wrapper
+      position: relative
+      margin-bottom: 6%
+      img
+      .data
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        background-color: $main
+        width: 60px
+        height: 70px
+        bottom: 10%
+        left: -5%
+        p
+          color: $white
+          font-size: 15px
+          font-family: $accent-font
+          font-size: 30px
+          font-weight: 700
+          text-transform: uppercase
+          margin: 0
+          span
+            font-size: 15px
+            color: $white
+    h6
+    p
+    hr
+      background-color: #e5e5e5
+      height: 1px
+      width: 100%
+    i
+      color: $main
+    span
+      color: $gray
+      font-style: italic
+      margin-right: 5%
 
 
 
 .open-map
-	background-size: cover
-	background-repeat: no-repeat
-	text-align: center
-	overflow-x: hidden
-	.row
-		padding-top: 1%
-		padding-bottom: 1%
-		.col-lg-12
-			padding-right: 0
-			i
-				font-size: 35px
-				color: #f38181
-			a
-				h4
-					color: #f38181
-					transition: border-bottom .1s ease-in-out
-					&:hover
-						border-bottom: 4px solid #f38181
-		
+  background-size: cover
+  background-repeat: no-repeat
+  text-align: center
+  overflow-x: hidden
+  .row
+    padding-top: 1%
+    padding-bottom: 1%
+    .col-lg-12
+      padding-right: 0
+      i
+        font-size: 35px
+        color: #f38181
+      a
+          h4
+            color: #f38181
+            transition: border-bottom .1s ease-in-out
+            &:hover
+              border-bottom: 4px solid #f38181
+
 
 
 
 footer
-	background-color: #f8f8f8
-	.footer
-		padding-top: 5%
-		padding-bottom: 5%
-		&__subscribe
-			h1
-				color: #cccccc
-				font-size: 46px
-				font-weight: 700
-				font-family: $accent-font
-				margin-bottom: 5%
-			p
-				color: #999999
-				font-size: 15px
-				line-height: 24px
-			strong
-				color: #333333;
-				font-family: $accent-font
-				font-size: 18px
-				font-weight: 700
-				span
-					font-size: 14px
-					font-weight: 400
-			span
-				color: #999999
-				font-size: 15px
-				font-weight: 200
-				line-height: 24px
-				font-style: italic
-			hr
-				height: .5px
-				width: 100%
-				background-color: #e5e5e5
-			ul
-				display: flex
-				flex-direction: row
-				white-space: nowrap
-				justify-content: space-between
-				width: 70%
-				li
-					a
-						i
-							font-size: 20px
-							color: $main
-							transition: color .2s ease
-							&:hover
-								color: #f38181
-			form
-				display: flex
-				flex-direction: row
-				margin-top: 7%
-				input
-					color: #cccccc
-					font-size: 15px
-					line-height: 24px
-					margin-right: 0 !important
-					border-radius: 0 
-					width: 60%
-					font-style: italic
-					border-right: none
-				button
-					border-radius: 0
-					font-family: $accent-font
-					font-size: 14px
-					font-weight: 700
-					text-transform: uppercase
-					width: 40%
-					background-color: $main
-					border: none
-					&:hover
-						background-color: #f38181 !important
-		&__blogs
-			&-wrapper
-				display: flex
-				align-items: center
-				padding-top: 10.3%
-				img
-				&-text
-					display: flex
-					flex-direction: column
-					flex-wrap: wrap
-					margin-left: 8%
-					h6
-						color: #333333
-						font-size: 12px
-						text-transform: uppercase
-						margin: 0
-					span
-						color: #999999
-						font-size: 13px
-						font-style: italic
-		&__instagram
-			display: flex
-			flex-direction: column
-			align-items: center
-			#lightgallery
-				padding-top: 8%
+  background-color: #f8f8f8
+  .footer
+    padding-top: 5%
+    padding-bottom: 5%
+    &__subscribe
+        h1
+          color: #cccccc
+          font-size: 46px
+          font-weight: 700
+          font-family: $accent-font
+          margin-bottom: 5%
+        p
+          color: #999999
+          font-size: 15px
+          line-height: 24px
+        strong
+          color: #333333
+          font-family: $accent-font
+          font-size: 18px
+          font-weight: 700
+          span
+            font-size: 14px
+            font-weight: 400
+        span
+          color: #999999
+          font-size: 15px
+          font-weight: 200
+          line-height: 24px
+          font-style: italic
+        hr
+          height: .5px
+          width: 100%
+          background-color: #e5e5e5
+        ul
+          display: flex
+          flex-direction: row
+          white-space: nowrap
+          justify-content: space-between
+          width: 70%
+          li
+              a
+                  i
+                    font-size: 20px
+                    color: $main
+                    transition: color .2s ease
+                    &:hover
+                      color: #f38181
+        form
+          display: flex
+          flex-direction: row
+          margin-top: 7%
+          input
+            color: #cccccc
+            font-size: 15px
+            line-height: 24px
+            margin-right: 0 !important
+            border-radius: 0
+            width: 60%
+            font-style: italic
+            border-right: none
+          button
+            border-radius: 0
+            font-family: $accent-font
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            width: 40%
+            background-color: $main
+            border: none
+            &:hover
+              background-color: #f38181 !important
+    &__blogs
+        &-wrapper
+          display: flex
+          align-items: center
+          padding-top: 10.3%
+          img
+          &-text
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            margin-left: 8%
+            h6
+              color: #333333
+              font-size: 12px
+              text-transform: uppercase
+              margin: 0
+            span
+              color: #999999
+              font-size: 13px
+              font-style: italic
+    &__instagram
+      display: flex
+      flex-direction: column
+      align-items: center
+      #lightgallery
+        padding-top: 8%
 
 .rights
-	padding-top: 2%
-	padding-bottom: 1%
-	.container
-		.row
-			display: flex
-			justify-content: center
-			align-items: center
-			h6
-				color: #333333
-				font-size: 14px
-				text-transform: none
-				span
-					font-weight: 800
-					color: #f38181;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  padding-top: 2%
+  padding-bottom: 1%
+  .container
+      .row
+        display: flex
+        justify-content: center
+        align-items: center
+        h6
+          color: #333333
+          font-size: 14px
+          text-transform: none
+          span
+            font-weight: 800
+            color: #f38181;
 
 
 
 
 .slicknav_menu
-	margin: 0 auto
-	padding: 0
-	display: none
-	position: absolute
-	background: transparent
-	z-index: 1000
-	top: 20px
-	right: 0
-	width: 100%
-	.slicknav_btn
-		background: transparent
-	.slicknav_icon
-		font-size: 30px
-	ul
-		background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181)
-		text-align: center
-		width: 100%
-		margin: 0
-		a
-			font-size: 25px
-			font-weight: 400
-			font-family: $accent-font
-			text-transform: uppercase
-			transition: all .3s ease
-			padding-bottom: 3%
-			&:hover
-				color: $accent	
+  margin: 0 auto
+  padding: 0
+  display: none
+  position: absolute
+  background: transparent
+  z-index: 1000
+  top: 20px
+  right: 0
+  width: 100%
+  .slicknav_btn
+    background: transparent
+  .slicknav_icon
+    font-size: 30px
+  ul
+    background-image: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181)
+    text-align: center
+    width: 100%
+    margin: 0
+    a
+      font-size: 25px
+      font-weight: 400
+      font-family: $accent-font
+      text-transform: uppercase
+      transition: all .3s ease
+      padding-bottom: 3%
+      &:hover
+        color: $accent
 
 
 
 
 
 .owl-carousel
-	position: relative !important
-	.owl-nav
-		position: absolute
-		top: 33%
-		width: 100% !important
-		.owl-next, .owl-prev
-			position: absolute
-			background-color: red
-			span
-				color: #cccccc
-				font-size: 50px
-				transition: color .4s ease
-				&:hover
-					color: $main
-		.owl-next
-			right: 2%
-			z-index: 999
-		.owl-prev
-			left: 2%
+  position: relative !important
+  .owl-nav
+    position: absolute
+    top: 33%
+    width: 100% !important
+    .owl-next, .owl-prev
+      position: absolute
+      background-color: red
+      span
+        color: #cccccc
+        font-size: 50px
+        transition: color .4s ease
+        &:hover
+          color: $main
+    .owl-next
+      right: 2%
+      z-index: 999
+    .owl-prev
+      left: 2%
 
 
-			
-					
+
+
 
 
 

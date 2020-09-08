@@ -78,7 +78,7 @@ gulp.task('rsync', function() {
 gulp.task('browser', function(){
   var options = {
     uri: 'http://localhost:3000',
-    app: 'google-chrome'
+    app: 'chrome'
   };
   gulp.src(__filename)
   .pipe(open(options));
@@ -90,7 +90,7 @@ if (gulpversion == 3) {
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
 		gulp.watch('app/*.html', ['code'])
 	});
-	gulp.task('default', ['watch', 'browser']);
+	gulp.task('default', ['watch']);
 }
 
 if (gulpversion == 4) {
@@ -99,5 +99,5 @@ if (gulpversion == 4) {
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 		gulp.watch('app/*.html', gulp.parallel('code'))
 	});
-	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch', 'browser'));
+	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
 }
